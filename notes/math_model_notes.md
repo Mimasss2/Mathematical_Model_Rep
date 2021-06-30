@@ -77,7 +77,7 @@
   - x0=fsolve(f,startpoint) 只能求给定初始值附近的一个零点，**f是匿名函数或函数文件**
   - x=vpa(x0,5) vpa设置精度，表示将x0中的数据转化为保留5位有效数字的的结果
 
-- 二次规划：目标函数是自变量x的二次函数，约束条件全是线性的![image-20210630090528517](C:\Users\Mimas\AppData\Roaming\Typora\typora-user-images\image-20210630090528517.png)
+- 二次规划：目标函数是自变量x的二次函数，约束条件全是线性的![image](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/image1.png)
 
   - [x,fval]=quadprog(H,f,A,b,Aeq,beq,lb,ub,x0,options)
   - 注意二次型前面的1/2
