@@ -1,0 +1,11 @@
+clc,clear
+c=[1;0;-1;1];
+c=-c;
+A=[-2,3,1,0;1,1,0,-1;0,-1,0,1;
+    -1,0,0,1];
+B=[3;1;0;0];
+lb=zeros(4,1);
+ub=ones(4,1);
+intcon=1:4;
+[x,fval]=intlinprog(c,intcon,A,B,[],[],lb,ub);
+x,fval=-fval
