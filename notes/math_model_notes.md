@@ -1,22 +1,18 @@
 ## math model notes
 
-1.交换问题 无差别曲线
-
-2.效用函数 等效用线
-
-### 3.线性规划
+### 1.线性规划
 
 - [x,fval]=linprog(c,A,b,Aeq,Beq,lb,rb)
 - conditions：x是列向量
 - 若效用函数中出现x的绝对值，用将其分为u，v两向量进行转化
 
-### 4.整数规划
+### 2.整数规划
 
 - x=linprog(c,intcon,a,b,Aeq,Beq,lb,rb)
 - intcon：记录限定为整数的x的下标
 - 有时需将c转化为列向量，得到的x再通过reshape函数恢复形式
 
-### 5.非线性规划
+### 3.非线性规划
 
 - [x,fval]=fmincon(fun，x0,A,b,Aeq,beq,lb,ub,nonlcon,options)
 
