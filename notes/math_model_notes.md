@@ -102,8 +102,12 @@
   - //TODO matlab impletation：maxflow
   -  https://ww2.mathworks.cn/help/bioinfo/ref/maxflowbiograph.html
   - 思想：每一轮标号过程+增流过程确定一条增广路上可增加的流量（并使其生效）
-  - 标号过程反向弧标注的意义：![image-20210702082957737](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(1).png)
-  - ![image](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(2).png)
+  - 标号过程反向弧标注的意义：
+
+![image-20210702082957737](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(1).png)
+
+![image](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(2).png)
+
 - 最小费用最大流
   - 归结为：线性规划求（先）最大流量+（后）最小费用
   - 求最小费用流的迭代方法（原理！！
