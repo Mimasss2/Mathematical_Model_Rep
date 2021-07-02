@@ -92,3 +92,37 @@
     - 返回x是极小点
   - fseminf
 
+### 4.图与网络模型及方法
+
+- 基本算法
+  - 最短路：dijkstra/floyd
+  - 最小生成树：prim/kruskal
+- 网络最大流问题
+  - **标号过程+增流过程** *（原理！
+  - //TODO matlab impletation：maxflow
+  -  https://ww2.mathworks.cn/help/bioinfo/ref/maxflowbiograph.html
+  - 思想：每一轮标号过程+增流过程确定一条增广路上可增加的流量（并使其生效）
+  - 标号过程反向弧标注的意义：![image-20210702082957737](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(1).png)
+  - ![image](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(2).png)
+- 最小费用最大流
+  - 归结为：线性规划求（先）最大流量+（后）最小费用
+  - 求最小费用流的迭代方法（原理！！
+- 图论工具箱![image](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(3).png)
+
+- 渡河问题
+  - 将可行状态枚举后作为图的顶点，两状态可相互转化则有边相连且权值为1，否则权值为$+\infty$ 
+  - ==从初始状态(1,1,1,1)出发，经最小次数转移到(0,0,0,0)   —-最短路径问题
+  - 用四维状态转移向计算摆渡的邻接矩阵（异或算xor）
+
+- **作图函数biograph** docu：https://ww2.mathworks.cn/help/bioinfo/ref/biograph.html
+- TSP 
+  - 修改圈近似算法（思想参考《离散数学》定理15.7）
+  - 转化为线性规划（lingo)![image-20210702153753900](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(4).png)
+- 计划评审方法PERT/关键路线法CPM
+  - 计划网络图（AOE) 
+    - 事件（顶点） —-最早时间&最迟时间
+    - 工作（边） —–最早（迟）可能开工时间&最早（迟）可能完工时间
+    - 时差（机动时间/富裕时间）：工作的总时差（不影响总工期）&工作的单时差（不影响紧后工作）
+  - **转化为线性规划问题**![image-20210702153820825](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(5).png)
+  - 求关键路线![image-20210702153910182](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(6).png)
+
