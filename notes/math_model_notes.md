@@ -121,12 +121,17 @@
 - **作图函数biograph** docu：https://ww2.mathworks.cn/help/bioinfo/ref/biograph.html
 - TSP 
   - 修改圈近似算法（思想参考《离散数学》定理15.7）
-  - 转化为线性规划（lingo)![image-20210702153753900](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(4).png)
+  - 转化为线性规划（lingo)
+  - ![image-20210702153753900](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(4).png)
 - 计划评审方法PERT/关键路线法CPM
   - 计划网络图（AOE) 
     - 事件（顶点） —-最早时间&最迟时间
     - 工作（边） —–最早（迟）可能开工时间&最早（迟）可能完工时间
     - 时差（机动时间/富裕时间）：工作的总时差（不影响总工期）&工作的单时差（不影响紧后工作）
-  - **转化为线性规划问题**![image-20210702153820825](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(5).png)
-  - 求关键路线![image-20210702153910182](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(6).png)
+  - **转化为线性规划问题**
+  
+  - ![image-20210702153820825](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(5).png)
+  - 求关键路线
+
+![image-20210702153910182](https://raw.githubusercontent.com/Mimasss2/Mathematical_Model_Rep/main/images/c4/image%20(6).png)
 
